@@ -1,1 +1,28 @@
-/* Empty file for template. Remember to edit only this file and not the HTML file */
+
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+
+
+
+
+
+
+
+header, .summary, .preamble, .design-selection, .design-archives, .zen-resources, .explanation, .participation, .benefits, .requirements > *, footer {
+    position: relative;
+    float: left;
+    margin: 45px 10px;
+    padding: 0 50px 15px 50px;
+    width: 360px;
+    background: rgba(197, 182, 141, 0.607);
+    background-size: 360px auto;
+}
+
+
+
+
