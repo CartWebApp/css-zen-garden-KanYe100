@@ -1,28 +1,51 @@
 
 
-.page-wrapper {
+#css-zen-garden {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: ;
+    
+    
+}
+
+:root {
+    background: url(https://i.pinimg.com/originals/b2/2a/a2/b22aa22b2f3f55b6468361158d52e2e7.gif) fixed;
+    background-size: cover;
+}
+
+
+::selection {
+    color: rgb(255, 77, 0);
+    background: black;
 }
 
 
 
-
-
-
-
-
-header, .summary, .preamble, .design-selection, .design-archives, .zen-resources, .explanation, .participation, .benefits, .requirements > *, footer {
+header, .summary, .preamble, .design-selection, .design-archives, .zen-resources, .explanation, .participation, .benefits, #zen-requirements  > *, .footer {
+    display: grid;
     position: relative;
-    float: left;
-    margin: 45px 10px;
-    padding: 0 50px 15px 50px;
+    float:left;
+    margin: 50px 10px;
+    padding: 0 50px 10px 50px;
     width: 360px;
-    background: rgba(197, 182, 141, 0.607);
-    background-size: 360px auto;
+    background: rgba(240, 240, 238, 0.859);
+    
 }
 
+.requirements {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 150px auto;    
+}
+
+a:active {
+    color: rgb(233, 174, 65);
+}
+
+.sidebar {
+    display: grid;
+    grid-column-start: 2;
+}
 
 
 
