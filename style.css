@@ -1,11 +1,9 @@
 
 
 #css-zen-garden {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: ;
     
-    
+    background-color: rgba(251, 201, 182, 0.514); 
+
 }
 
 :root {
@@ -13,39 +11,82 @@
     background-size: cover;
 }
 
-
 ::selection {
     color: rgb(255, 77, 0);
     background: black;
-}
-
-
-
-header, .summary, .preamble, .design-selection, .design-archives, .zen-resources, .explanation, .participation, .benefits, #zen-requirements  > *, .footer {
-    display: grid;
-    position: relative;
-    float:left;
-    margin: 50px 10px;
-    padding: 0 50px 10px 50px;
-    width: 360px;
-    background: rgba(240, 240, 238, 0.859);
-    
-}
-
-.requirements {
-    display: grid;
-    grid-template-columns: 150px auto;
-    grid-template-rows: 150px auto;    
 }
 
 a:active {
     color: rgb(233, 174, 65);
 }
 
-.sidebar {
+.intro {
     display: grid;
-    grid-column-start: 2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
 }
 
+aside.sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
+.intro h1 {
+    
 
+    text-align: center;
+    align-content: center;
+    border-style: solid;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+
+}
+
+.intro h2, .summary {
+
+    text-align: justify;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    margin-right: 100px;
+    padding-left: 30px;
+}
+
+.intro h3 {
+    text-align: center;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    padding: 1px;
+}
+
+.preamble{
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    margin-top: -80px;
+    
+}
+
+aside.sidebar {
+    text-align: center;
+    grid-column: 3 / 2;
+    grid-row: 3 / 2;
+    padding-left: 10px;
+    background-color: bisque;
+}
+
+* {
+    color: rgb(0, 0, 0);
+}
+
+div.extra1 {
+    content: "";
+    background: url(https://cdn.dribbble.com/userupload/24405026/file/original-b0925cc50562c9f2544e1e5aeef8d20a.gif);
+    background-position: center;
+    position: absolute;
+}
