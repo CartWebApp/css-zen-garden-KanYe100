@@ -1,10 +1,6 @@
 
 
-#css-zen-garden {
-    
-    background-color: rgba(251, 201, 182, 0.514); 
 
-}
 
 :root {
     background: url(https://i.pinimg.com/originals/b2/2a/a2/b22aa22b2f3f55b6468361158d52e2e7.gif) fixed;
@@ -20,18 +16,14 @@ a:active {
     color: rgb(233, 174, 65);
 }
 
-.intro {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+.intro, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements {
+    display: flex;
+    flex-direction: column;
     gap: 15px;
+    
 }
 
-aside.sidebar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+
 
 .intro h1 {
     
@@ -39,54 +31,90 @@ aside.sidebar {
     text-align: center;
     align-content: center;
     border-style: solid;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 30px;
+    background-color: rgb(214, 191, 237);
 
 }
+ .intro h2 {
+    text-align: center;
+    background-color: azure;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+ }
 
-.intro h2, .summary {
+ .summary, h2 {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+ }
 
-    text-align: justify;
-    grid-column: 1 / 1;
-    grid-row: 2 / 2;
-    margin-right: 100px;
-    padding-left: 30px;
-}
 
 .intro h3 {
     text-align: center;
     
     margin-left: 100px;
     margin-right: 100px;
-    padding: 30px;
-    grid-column: 2 / 2;
-    grid-row: 1 / 1;
-    padding: 1px;
+
 }
 
 .preamble{
-    grid-column: 2 / 2;
-    grid-row: 2 / 3;
-    margin-top: -80px;
-    
+
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 aside.sidebar {
-    text-align: center;
-    grid-column: 3 / 2;
-    grid-row: 3 / 2;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 10px;
-    background-color: bisque;
+    border-radius: 10px;
+    background-color: rgba(246, 240, 248, 0.968);
+    border-style: solid;
+
 }
+
+
 
 * {
     color: rgb(0, 0, 0);
 }
 
-div.extra1 {
-    content: "";
-    background: url(https://cdn.dribbble.com/userupload/24405026/file/original-b0925cc50562c9f2544e1e5aeef8d20a.gif);
-    background-position: center;
-    position: absolute;
+.page-wrapper {
+    display: flex;
+}
+
+p {
+    font-weight: 1000;
+}
+
+ .summary, .preamble {
+    background-color: rgba(240, 248, 255, 0.688);
+    border-style: solid;
+    border-radius: 10px;
+}
+
+nav, .zen-resources, .resources, .design-archives, .design-selection {
+    padding-right: 20px;
+    align-content: center;
+    background-color: rgb(205, 253, 253);
+    border-radius: 10px;
+    
+}
+
+
+
+
+.supporting {
+    background-color: rgba(250, 235, 215, 0.818);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-style: solid;
 }
